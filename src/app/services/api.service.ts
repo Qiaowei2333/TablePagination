@@ -22,4 +22,11 @@ export class ApiService {
       )
   }
 
+  postOne(path: string, body: any):Observable <any> {
+    return this.http.post(path, body).pipe(
+      map(response=>response as any[]),
+      catchError(e => throwError(new Error('SOMETHING BAD HAPPENED')))
+    )
+  }
+
 }

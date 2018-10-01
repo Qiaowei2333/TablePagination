@@ -73,5 +73,12 @@ export class PageComponent implements OnInit {
     this.showPages(this.currentPage+"",-1);
   }
   
+  submit(employer:Employer) {
+    let submittedData = {
+      "row ID": employer.id,
+      "row Status": employer.status
+    };
+    this.employerService.submitOneEmployer(submittedData);
+  }
 
 }
