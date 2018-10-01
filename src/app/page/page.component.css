@@ -1,0 +1,59 @@
+/* table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+} */
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+/* .table-container {
+    width: 69%;
+    overflow: scroll;
+} */
+
+
+
+.table-container {
+    /* width: 50%; */
+    height: 600px;
+    width: 1000px;
+    overflow: scroll;
+    /* white-space: nowrap; */
+}
+
+/* table tfoot{
+    overflow: visible;
+} */
+
+/* table {
+    position: absolute;
+    top: 0px;
+} */
+/* thead{
+    position: sticky;
+    top: 0px;
+    display: inline-table;
+} */
+
+th{
+
+    position: sticky; 
+    top: 0px;
+    /* z-index: 1; */
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    /* border-collapse: separate; */
+}
+
